@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK Pelita Bandung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+          /* Background gedung sekolah */
+      background: url("gedung.jpg.jpg") no-repeat center center;
+      background-size: cover; /* biar full layar */
+       position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* hitam 40% transparan */
+  z-index: -1;
+    }
+     /* Konten tetap di atas, tidak berubah warna */
+    .content {
+      position: relative;
+      z-index: 1; /* di atas overlay */
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    /* Semua teks otomatis putih */
+      .content {
+      position: relative;
+      z-index: 1; /* teks di atas overlay */
+      text-align: center;
+      color: white; /* semua teks putih */
+      padding-top: 120px;
+    }
+       h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* biar lebih jelas */
+    }
+     p {
+      font-size: 20px;
+      color: white; /* tetap putih, tidak ketutup overlay */
+    }
+
+    /* Navbar */
+    header {
+      background: #0a8f06; /*hijau terang */
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; /* kuning emas */
+    }
+
+    /* Section */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #beranda {
+      background: #0a8f06;
+      color: white;
+      padding: 100px 20px;
+    }
+
+    #tentang {
+      background: white;
+    }
+
+    #galeri {
+      background: #f0f0f0;
+    }
+
+    #kontak {
+      background: white;
+    }
+
+    .btn {
+      background: #ffd700;
+      color: #0a8f06;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffae00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a8f06;
+      color: white;
+    }
+   header {
+  background: #0a8f06;
+  color: white;
+  padding: 20px;
+  display: flex;       /* biar logo & teks sejajar */
+  align-items: center; /* vertikal rata tengah */
+}
+
+header .logo {
+  width: 60px;  /* ukuran logo */
+  height: auto;
+  margin-right: 15px; /* jarak antara logo dan teks */
+}
+
+header .judul {
+  text-align: left; /* teks rata kiri */
+}
+  </style>
+</head>
+<body>
+
+
+   <header>
+    <h1>SMK PELITA BANDUNG</h1>
+    <nav>
+       <ul>
+        <li><a href="SMK PELITA BDG.html">BERANDA</a></li>
+        <li><a href="KONTAK V1.html">KONTAK</a></li>
+        <li><a href="GALERI V1.html">GALERI</a></li>
+        <li><a href="TENTANG V1.html">TENTANG</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="upacara.jpg" alt="Upacara Bendera">
+      <h3><p>UPACARA BENDERA</p></h3>
+      <p>Kegiatan rutin setiap hari Senin untuk menumbuhkan rasa cinta tanah air dan disiplin siswa.</p>
+    </div>
+
+    <div class="card">
+      <img src="pembiasaan.jpg" alt="Pembiasaan">
+      <h3><p>KEGIATAN PEMBIASAAN</p></h3>
+      <p>Kegiatan pembiasaan seperti doa bersama, membaca Al-Qur’an, dan sikap 5S (Senyum, Salam, Sapa, Sopan, Santun).</p>
+    </div>
+
+    <div class="card">
+      <img src="ekstrakurikuler.jpg" alt="Ekstrakurikuler">
+      <h3><p>EKSTRAKURIKULER</p></h3>
+      <p>Berbagai ekstrakurikuler seperti Pramuka, Paskibra, Futsal, Seni Tari, dan lainnya.</p>
+    </div>
+
+    <div class="card">
+      <img src="kegiatan-belajar.jpg" alt="Kegiatan Belajar">
+      <h3><p>KEGIATAN BELAJAR</p></h3>
+      <p>Pembelajaran teori dan praktik sesuai jurusan untuk mencetak siswa yang kompeten dan siap kerja.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SMK Pelita bandung</p>
+  </footer>
+
+</body>
+</html>

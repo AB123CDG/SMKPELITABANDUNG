@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK Pelita Bandung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    
+          /* Background gedung sekolah */
+      background: url("gedung.jpg.jpg") no-repeat center center;
+      background-size: cover; /* biar full layar */
+       position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* hitam 40% transparan */
+  z-index: -1;
+    }
+     /* Konten tetap di atas, tidak berubah warna */
+    .content {
+      position: relative;
+      z-index: 1; /* di atas overlay */
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    /* Semua teks otomatis putih */
+      .content {
+      position: relative;
+      z-index: 1; /* teks di atas overlay */
+      text-align: center;
+      color: white; /* semua teks putih */
+      padding-top: 120px;
+    }
+       h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* biar lebih jelas */
+    }
+     p {
+      font-size: 20px;
+      color: white; /* tetap putih, tidak ketutup overlay */
+    }
+
+    /* Navbar */
+    header {
+      background: #0a8f06; /*hijau terang */
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; /* kuning emas */
+    }
+
+    /* Section */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #beranda {
+      background: #0a8f06;
+      color: white;
+      padding: 100px 20px;
+    }
+
+    #tentang {
+      background: white;
+    }
+
+    #galeri {
+      background: #f0f0f0;
+    }
+
+    #kontak {
+      background: white;
+    }
+
+    .btn {
+      background: #ffd700;
+      color: #0a8f06;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffae00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a8f06;
+      color: white;
+    }
+   header {
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      background-color: #0a8f06; /* warna header */
+      color: white;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 450px;
+    }
+       header {
+  background: #0a8f06;
+  color: white;
+  padding: 20px;
+  display: flex;       /* biar logo & teks sejajar */
+  align-items: center; /* vertikal rata tengah */
+}
+
+header .logo {
+  width: 60px;  /* ukuran logo */
+  height: auto;
+  margin-right: 15px; /* jarak antara logo dan teks */
+}
+
+header .judul {
+  text-align: left; /* teks rata kiri */
+}
+  </style>
+</head>
+<body>
+  <header>
+   <h1>SMK PELITA BANDUNG</h1>
+    <nav>
+       <ul>
+        <li><a href="SMK PELITA BDG.html">BERANDA</a></li>
+        <li><a href="KONTAK V1.html">KONTAK</a></li>
+        <li><a href="GALERI V1.html">GALERI</a></li>
+        <li><a href="TENTANG V1.html">TENTANG</a></li>
+      </ul>
+  </header>
+
+  <div class="container" id="sejarah">
+    <h2><p>SEJARAH:</p></h2>
+    <p>SMK Pelita didirikan untuk mencetak lulusan yang siap kerja, berwirausaha, dan mampu bersaing di era global. Sejak berdiri, sekolah ini terus berkembang dengan berbagai jurusan unggulan.</p>
+  </div>
+
+  <div class="container" id="visi">
+    <h2><p>VISI & MISI:</p></h2>
+    <p><strong>VISI:</strong> menjadi sekolah unggulan dalam bidang bisnis,Teknik dan pariwisata yang dilandasi dengan percaya diri,empati,luwes,inovatif terampil,dan akhlak mulia(pelita)</p>
+    <p><strong>MISI:</strong></p>
+    <ul>
+      <li><p>Melaksanakan proses pembelajaran dan bimbingan secara efektif dan efisien</p></li>
+      <li><p>Mengembangkan keimanan dan ketawaan,berbudi luhur serta menjunjung tinggi nilai-nilai budaya bangsa</p></li>
+      <li><p>Memberikan bekal iptek yang dapat menumbuhkan kemampuan daya pikir realistis,kreatif dan logis menuju sekolah unggulan</p></li>
+      <li><p>Memberi bekal keahlian Sesuai dengan kompetense keahliannya</p></li>
+      <li><p>Mewujudkan kerjasama dengan semua "stakeholder"</p></li>
+    </ul>
+  </div>
+
+  <div class="container" id="jurusan">
+    <h2><p>JURUSAN:</p></h2>
+    <ul>
+      <li><p>Rekayasa Perangkat lunak (RPL)</p></li>
+      <li><p>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</p></li>
+      <li><p>Bisnis daring dan Pemasaran (PN)</p></li>
+      <li><p>Teknik dan bisnis sepeda motor (TBSM)</p></li>
+      </li>
+    </ul>
+  </div>
+    <div class="container" id="fasilitas">
+        <h2><p>FASILITAS:</p></h2>
+        <ul>
+        <li><p>gedung bertingkat III</p></li>
+        <li><p>8 ruang teori</p></li>
+        <li><p>lab.perkantoran</p></li>
+        <li><p>lab.pemasaran</p></li>
+        <li><p>lab.komputer</p></li>
+        <li><p>bengkel motor</p></li>
+        <li><p>lapang basket,lapang volley dan lapang futsal</p></li>
+        <li><p>Ruang terbuka  hijau</p></li>
+        <li><p>lab.bahasa</p></li>
+        <li><p>perpustakaan</p></li>
+        <li><p>mushola</p></li>
+        <li><p>ruang multimedia</p></li>
+        <li><p>sanggar(ruang ekstrakurikuler)</p></li>
+        <li><p>hotspot area</p></li>
+        <li><p>fasilitas pembelajaran lainnya yang dilengkapi dengan sarana seni dan olahraga</p></li>
+        <li><p>meeting room</p></li>
+        <li><p>ruang gym & fitnes</p></li>
+        <li><p>Ruang live musik</p></li>
+        <li><p>ruang podcast</p></li>
+        </ul>
+    </div>
+    <div class="container" id="akreditasi">
+        <h2><p>AKREDITASI:</p></h2>
+        <p>SMK Pelita Bandung telah terakreditasi A.</p>
+    </div>
+    <div class="container" id="data-sekolah">
+        <h2><p>DATA SEKOLAH:</p></h2>
+        <p>Nama Sekolah : SMK Pelita Bandung</p>
+        <ul>
+<li><p>NPSN : 20219157</p></li>
+<li><p>Status : Swasta</p></li>
+<li><p>Bentuk Pendidikan : SMK</p></li>
+<li><p>Status Kepemilikan : Yayasan</p></li>
+<li><p>SK Pendirian Sekolah : 10</p></li> 
+<li><p>Tanggal SK Pendirian : 1983-10-06</p></li> 
+<li><p>SK Izin Operasional : 1988/IO2.1/Kep/OT/1999</p></li> 
+<li><p>Tanggal SK Izin Operasional : 1999-06-15</p></li>  
+<li><p>Akreditasi : A</p></li> 
+<li><p>Tanggal Akreditasi : 2018-12-04</p></li> 
+</ul>
+
+<div class="container" id="ekstrakurikuler">
+  <h2><p>EKSTRAKURIKULER:</p></h2>
+  <ul>
+<li><p>osis(organisasi siswa intra sekolah)</p></li>
+<li><p>mpk(majelis perwakilan kelas)</p></li>
+<li><p>paskribra(pasukan pengibar bendera)</p></li>
+<li><p>pramuka(praja mudja karana)</p></li>
+<li><p>padus(paduan suara)</p></li> 
+<li><p>jamic(remaja islamic siswa pelita)</p></li> 
+<li><p>kesenian(tradisional & modern dance)</p></li> 
+<li><p>seni musik(band)</p></li>
+<li><p>angklung & karawitan</p></li>
+<li><p>vista(volleybal pelita)</p></li>
+<li><p>basta(basketball pelita)</p></li>
+<li><p>fus'ap(futsal anak pelita)</p></li>
+<li><p>bascom(basic computer)</p></li>
+<li><p>otomotif community</p></li>
+<li><p>english community</p></li>
+<li><p>taekwondo</p></li>
+<li><p>yoake</p></li>
+<li><p>fitnes(kebugaran)</p></li>
+<li><p>podcast</p></li>
+</ul>
+</div>
+</p>
+    </div>
+    <h1><p>LOKASI SMK PELITA BANDUNG 1:</p></h1>
+
+  <!-- Google Maps -->
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9464800348537!2d107.64212627371056!3d-6.897005067491481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7bd5b0a69ff%3A0x6315f9a4bc4a934f!2sSMK%20Pelita%20Bandung!5e0!3m2!1sid!2sid!4v1759056869641!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <footer>
+    <p>&copy; 2025 SMK Pelita bandung</p>
+  </footer>
+
+</body>
+</html>
